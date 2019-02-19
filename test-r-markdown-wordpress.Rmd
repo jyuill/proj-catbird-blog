@@ -56,6 +56,8 @@ This worked but with warnings about deprecated functions - may not be sustainabl
 
 ## Alternative handling of graphics
 
+Idea was to upload to Google Drive, use link to file. Doesn't work because Wordpress doesn't recognize that the link is an image file. :P
+
 ```{r longley-gnp}
 #str(longley)
 ggplot(longley, aes(x=Year, y=GNP))+geom_line()
@@ -63,8 +65,7 @@ ggplot(longley, aes(x=Year, y=GNP))+geom_line()
 ggsave(filename='longley-gnp.png', device='png', path='figures')
 
 ## upload file to GDrive
-drive_upload(media='figures/longley-gnp.png', path='https://drive.google.com/drive/folders/1514PZY5fZglqPadDLAc8Ug6cJTsct8Ta/',
-             name='longley-gnp.png')
+#drive_upload(media='figures/longley-gnp.png', #path=as_id('1514PZY5fZglqPadDLAc8Ug6cJTsct8Ta'))
 
 ```
 

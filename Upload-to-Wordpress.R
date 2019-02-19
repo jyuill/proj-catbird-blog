@@ -17,7 +17,7 @@ knit2wp('test-r-markdown-wordpress.Rmd',
         title = 'testing-r-markdown-wordpress', 
         publish = FALSE) # your filename and blog post title
 
-## alternative approach to figures:
+## alternative approach to figures: [DOESN'T WORK!]
 ## 1. use ggsave to save charts with desired name/location locally (at least for ggplot2)
 ## 2. use googledrive to upload file to GDrive
 ## 3. embed link to GDrive location
